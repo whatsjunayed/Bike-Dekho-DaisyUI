@@ -11,11 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .my-font {
         font-family: "Poppins", serif;
         font-weight: 400;
+        font-style: normal;
+      }
+      .my-font2 {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
         font-style: normal;
       }
     </style>
@@ -44,7 +54,7 @@
     </script>
   </head>
   <body class="max-w-[1440px] mx-auto my-font">
-    <header class="max-w-[1128px] mx-auto">
+    <header class="max-w-[1128px] md:w-[90%] xl:w-full mx-auto">
       <!-- Navbar Section -->
       <nav class="lg:py-4">
         <div class="navbar lg:bg-transparent lg:px-0">
@@ -87,7 +97,7 @@
             </ul>
           </div>
           <div class="">
-            <a class="btn bg-btn-color px-12 py-4 text-white">Button</a>
+            <a class="btn bg-btn-color px-12 py-4 text-white">Login</a>
           </div>
         </div>
       </nav>
@@ -198,7 +208,355 @@
         </div>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- Feature -->
+      <section class="py-32 w-[90%] xl:w-full max-w-[1140px] mx-auto">
+        <h1 class="md:text-5xl text-2xl font-semibold text-center">
+          Fetured Bikes In This Year
+        </h1>
+        <p class="text-xs md:text-sm font-semibold text-btn-color text-center">
+          Best bike collection
+        </p>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 mt-10"
+        >
+          <img src="images/others/feature-bike.svg" alt="" class="w-full" />
+          <img src="images/slider/bike3.png" alt="" class="w-full" />
+          <img src="images/others/feature-bike.svg" alt="" class="w-full" />
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="w-[90%] xl:w-full max-w-[1171px] mx-auto">
+        <h1 class="md:text-5xl text-2xl font-semibold text-center">
+          latest News
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+          <div class="card flex flex-col justify-between p-5 border-2">
+            <figure>
+              <img src="images/others/latest1.png" alt="" class="w-full" />
+            </figure>
+
+            <div class="flex flex-col gap-5 pt-5">
+              <h2 class="card-title text-xl md:text-2xl">
+                Ducati XDIAVEL S-73
+              </h2>
+              <p class="text-sm md:text-base text-[#6C6C6C]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+            </div>
+            <div>
+              <button
+                class="btn bg-btn-color text-white mt-5 md:text-lg font-medium"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="card flex flex-col justify-between p-5 border-2">
+            <figure>
+              <img src="images/others/latest2.png" alt="" class="w-full" />
+            </figure>
+
+            <div class="flex flex-col gap-5 pt-5">
+              <h2 class="card-title text-xl md:text-2xl">
+                Motorcycles & Scooters
+              </h2>
+              <p class="text-sm md:text-base text-[#6C6C6C]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+            </div>
+            <div>
+              <button
+                class="btn bg-btn-color text-white mt-5 md:text-lg font-medium"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="card flex flex-col justify-between p-5 border-2">
+            <figure>
+              <img src="images/others/latest3.png" alt="" class="w-full" />
+            </figure>
+
+            <div class="flex flex-col gap-5 pt-5">
+              <h2 class="card-title text-xl md:text-2xl">
+                2021 Honda CBR500R
+              </h2>
+              <p class="text-sm md:text-base text-[#6C6C6C]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+            </div>
+            <div>
+              <button
+                class="btn bg-btn-color text-white mt-5 md:text-lg font-medium"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Section -->
+      <section class="py-32 w-[90%] xl:w-full max-w-[1054px] mx-auto">
+        <h1 class="md:text-5xl text-2xl font-semibold text-center">
+          Happy <span class="text-btn-color"> Clients says</span>
+        </h1>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-11 pt-11"
+        >
+          <div
+            class="flex flex-col items-center text-center border-2 py-10 px-9 rounded-md gap-5"
+          >
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="images/others/user-1.png" />
+              </div>
+            </div>
+            <p class="text-[#6C6C6C]">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <div class="rating rating-sm">
+              <input
+                type="radio"
+                name="rating-3"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-3"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-3"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-3"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-3"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+            </div>
+            <p class="text-sm font-semibold text-[#23A6F0]">Regina Miles</p>
+            <p class="text-sm font-semibold">Banker</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-center border-2 py-10 px-9 rounded-md gap-5"
+          >
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="images/others/user-2.png" />
+              </div>
+            </div>
+            <p class="text-[#6C6C6C]">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <div class="rating rating-sm">
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+            </div>
+            <p class="text-sm font-semibold text-[#23A6F0]">Regina Miles</p>
+            <p class="text-sm font-semibold">Banker</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-center border-2 py-10 px-9 rounded-md gap-5"
+          >
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="images/others/user-3.png" />
+              </div>
+            </div>
+            <p class="text-[#6C6C6C]">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <div class="rating rating-sm">
+              <input
+                type="radio"
+                name="rating-5"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-5"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-5"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-5"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked"
+                disabled
+              />
+              <input
+                type="radio"
+                name="rating-5"
+                class="mask mask-star-2 bg-orange-400"
+                disabled
+              />
+            </div>
+            <p class="text-sm font-semibold text-[#23A6F0]">Regina Miles</p>
+            <p class="text-sm font-semibold">Banker</p>
+          </div>
+        </div>
+      </section>
+      <!-- Question -->
+      <section class="w-[90%] xl:w-full max-w-[1171px] mx-auto">
+        <h1 class="md:text-5xl text-2xl font-semibold text-center">
+          Frequently Asked <span class="text-btn-color"> Questions</span>
+        </h1>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 mt-12 my-font2 gap-x-20 gap-y-14"
+        >
+          <img
+            src="images/others/faq.png"
+            alt=""
+            class="bg-contain mx-auto w-[30%] lg:w-auto"
+          />
+          <div class="flex flex-col justify-between">
+            <div class="collapse collapse-arrow border border-[#D5E5FB]">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What are the most important things I should know about riding a
+                bike?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#7E848C]">
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-[#D5E5FB]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I tell if my helmet is old and I need a new one?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#7E848C]">
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-[#D5E5FB]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                What rules should I follow when riding my bike?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#7E848C]">
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-[#D5E5FB]">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                My bike has been in storage is it safe to ride?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#7E848C]">
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="max-w-[1440px] mx-auto mt-32 py-14 bg-[#0B0D16]">
+      <section
+        class="max-w-[1170px] mx-auto w-[90%] xl:w-full grid grid-cols-1 lg:grid-cols-2 gap-y-10"
+      >
+        <div class="text-white/50 lg:mx-auto">
+          <ul class="flex flex-col sm:flex-row gap-6 mb-5 sm:mb-0">
+            <li>Download Now</li>
+            <li>License</li>
+          </ul>
+          <ul class="flex gap-6 pt-3 pb-6 flex-col sm:flex-row">
+            <li>About</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Careers</li>
+            <li>Help</li>
+            <li>Privacy Policy</li>
+          </ul>
+          <p class="text-sm">© 2020 bike. All rights reserved</p>
+        </div>
+        <div class="lg:mx-auto flex flex-col gap-2">
+          <h3 class="text-lg font-semibold text-white/30">Get the App</h3>
+          <img src="images/others/android.png" alt="" class="max-w-[135px]" />
+          <img src="images/others/ios.png" alt="" class="max-w-[135px]" />
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
